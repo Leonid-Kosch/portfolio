@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/zero.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+</head>
+<body>
+    <div class="bg-box">
+        <div class="bg-box__item"></div>
+        <div class="bg-box__item"></div>
+        <div class="bg-box__item"></div>
+        <div class="bg-box__item"></div>
+        <div class="bg-box__item"></div>
+    </div>
+    <nav>
+        <div class="container">
+            <div class="nav__elements">
+                <a href="" class="logo"><img src="./img/Logo.svg" alt=""></a>
+                <div class="nav__links">
+                    <a href="#header" class="nav__links_active">Главная</a>
+                    <a href="#about-me">Обо мне</a>
+                    <a href="#work">Работы</a>
+                    <a href="#contact">Контакты</a>
+                </div>
+                <div class="nav__contact">
+                    <a href="" class="telegram"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="main-box__start main-box_active" id="header">
+            <h1>
+                Леонид Кощеев
+            </h1>
+            <hr>
+            <p>
+                Программирую с 10 лет 
+            </p>
+            <button>Узнать больше</button>
+        </div>
+        <div class="main-box__about-me" id="about-me">
+            <h2>Обо мне</h2>
+            <div class="about-me__elements">
+                <p>
+                    Меня зовут Леонид, мне 12 лет. <br>Уже более 2 лет я занимаюсь прогаммированием. Создаю сайты различной сложности от одностраничных лэндингов до веб-приложений.<br> Владею языками HTML, CSS, JavaScript. Также свободно говорю на русском и сербском языках.<br> Буду рад сотрудничеству!          
+                </p>
+                <img src="./img/Group 1photo2.png" alt="" id="aboutMeImage">
+            </div>
+        </div>
+        <div class="main-box__work" id="work">
+            <h2>Работы</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/site-1.png" alt="">
+                        <h3>Сайт adidas</h3>
+                        <p>
+                            Языки: HTML, Css, JavaScript <br> 
+                            Использование swiper-slider.
+                        </p>
+                        <a href="https://leonid-kosch.github.io/adidas_shop/" target="_blank">Перейти на сайт</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/site-2.png" alt="">
+                        <h3>Сайт фотографа</h3>
+                        <p>
+                            Используется технология display grid.
+                        </p>
+                        <a href=" https://leonid-kosch.github.io/leonidphotograf/" target="_blank">Перейти на сайт</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/site-3.png" alt="">
+                        <h3>Часы</h3>
+                        <p>
+                            Аналаговые часы на чистом JavaScripte.
+                        </p>
+                        <a href="https://leonid-kosch.github.io/clock/" target="_blank">Перейти на сайт</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/site-4.png" alt="">
+                        <h3>Браузерная игра пинг-понг</h3>
+                        <p>
+                            Использование технологии canvas. 
+                        </p>
+                        <a href="https://leonid-kosch.github.io/ping-pong/" target="_blank">Перейти на сайт</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/site-5.png" alt="">
+                        <h3>Калькулятор на JavaScript.</h3>
+                        <p>
+                            Аналог калькулятора из iPhone на чистом JavaScript.
+                        </p>
+                        <a href="https://leonid-kosch.github.io/calculator/" target="_blank">Перейти на сайт</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/site-6.png" alt="">
+                        <h3>Браузерная игра - гонка</h3>
+                        <p>
+                            Браузерная игра на чистом JavaScript в 120 строчек кода.
+                        </p>
+                        <a href="https://leonid-kosch.github.io/random-car-run/" target="_blank">Перейти на сайт</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/site-7.png" alt="">
+                        <h3>Браузерная игра - найди пару</h3>
+                        <p>
+                            Браузерная игра на чистом JavaScript.
+                        </p>
+                        <a href="https://leonid-kosch.github.io/randomcart/" target="_blank">Перейти на сайт</a>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="main-box__contact" id="contact">
+            <h2>Контакты</h2>
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSccvvrM7tUa9Mk5CPqoL--dzz04XrVGK-MH19cb8NnScRY8Ng/formResponse" target="formsubmit" method="post" name="submit">
+                <iframe src="" frameborder="0" name="formsubmit"></iframe>
+                <div class="submit-wrapper">
+                    Ваша заявка успешно отправлена.
+                </div>
+                <h3>
+                    Оставьте заявку, я свяжусь с Вами в течении суток.
+                </h3>
+                <div class="input-box">
+                    <input type="text"  class="input" name="entry.1172609291" required>
+                    <span id="inputSpan" class="input-text">Введите имя</span>
+                </div>
+                <div class="input-box">
+                    <input type="email"  class="input" name="entry.1703063610" required>
+                    <span id="inputSpan" class="input-text">Введите почту</span>
+                </div>
+                <div class="input-box">
+                    <textarea  cols="30" rows="5" class="input" name="entry.1684004440" required2></textarea>
+                    <span id="inputSpan" class="input-text">Ваш комментарий</span>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </header>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/801be297c3.js" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

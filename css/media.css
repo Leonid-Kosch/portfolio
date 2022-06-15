@@ -114,7 +114,7 @@
         left: 0;
     }
     body{
-        background-size: 600%;
+        background-size: cover;
     }
     form{
         padding: 16px;

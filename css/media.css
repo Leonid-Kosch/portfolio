@@ -1,4 +1,4 @@
-@media (max-height: 800px) {
+@media (max-height: 700px) {
     header > div{
         position: relative;
         width: 100%;
@@ -6,7 +6,7 @@
         opacity: 1;
         visibility: visible;
         transition: all 0.5s;
-        padding: 5vh 0;
+        padding: 15vh 0 10vh;
         transform: translate(0, 0) scale(1);
         top: 0;
         left: 0;
@@ -42,14 +42,22 @@
     h2{
         margin-bottom: 32px;
     }
-    header > div{
-        padding: 10vh 0;
+}
+
+@media(max-width: 768px){
+    .about-me__elements img{
+        height: auto;
+        width: 40%;
     }
 }
 
 @media (max-width: 600px){
     .about-me__elements{
         flex-direction: column-reverse;
+    }
+    .about-me__elements img{
+        margin: 0 auto;
+        transform: translateX(4%);
     }
     .hamburger{
         display: block;
@@ -104,5 +112,14 @@
     }
     .nav__links_active{
         left: 0;
+    }
+    body{
+        background-size: 600%;
+    }
+    form{
+        padding: 16px;
+    }
+    .main-box__start a{
+        font-size: 24px;
     }
 }

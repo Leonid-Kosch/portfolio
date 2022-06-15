@@ -1,4 +1,5 @@
-const screenHeight = window.screen.height
+const screenHeight = window.screen.height;
+const screenWidth = window.screen.width;
 let navLinksAll = document.querySelectorAll('.nav__links a');
 let mainBoxAll = document.querySelectorAll('header > div');
 let length = navLinksAll.length;
@@ -42,7 +43,7 @@ iframe.onload = function(){
     }, 3000);
 };
 
-if (screenHeight > 800){
+if (screenHeight > 700){
     let startTouchPosition = null; //создаем переменную для стартовой позиции нажатия
     let moveTouchPosition = null; //создаем переменную в которую будут попадать позиции при движении палцьа
     body.addEventListener('touchstart', function(e) { // запускаем функцию в момент нажатия 
@@ -123,6 +124,23 @@ if (screenHeight > 800){
             }, 1000);
         }
     }
+} else{
+    hamburger.onclick = function() {
+        hamburger.classList.toggle('hamburger_active');
+        navLinks.classList.toggle('nav__links_active');
+        body.classList.toggle('scroll-none');
+    }
+    for(let number = 0; number < 4; number++){
+        navLinksAll[number].onclick = function() {
+            for(let number = 0; number < 4; number++){
+                navLinksAll[number].classList.remove('nav__links_active');
+            }
+            navLinksAll[number].classList.add('nav__links_active');
+            hamburger.classList.remove('hamburger_active');
+            navLinks.classList.remove('nav__links_active');
+            body.classList.remove('scroll-none');
+        }
+    }
 }
 
 new Swiper ('.swiper',{                                                         
@@ -145,21 +163,4 @@ new Swiper ('.swiper',{
         clickable:true,                                                         
     }                                                         
 });
-
-hamburger.onclick = function() {
-    hamburger.classList.toggle('hamburger_active');
-    navLinks.classList.toggle('nav__links_active');
-    body.classList.toggle('scroll-none');
-}
-for(let number = 0; number < 4; number++){
-    navLinksAll[number].onclick = function() {
-        for(let number = 0; number < 4; number++){
-            navLinksAll[number].classList.remove('nav__links_active');
-        }
-        navLinksAll[number].classList.add('nav__links_active');
-        hamburger.classList.remove('hamburger_active');
-        navLinks.classList.remove('nav__links_active');
-        body.classList.remove('scroll-none');
-    }
-}
 

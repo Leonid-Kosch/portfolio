@@ -10,6 +10,9 @@ body{
     animation: header-bg linear infinite 30s;
     min-height: 100vh;
 }
+h2{
+    margin-bottom: 32px;;
+}
 .scroll-none {
     overflow-y: hidden;
 }
@@ -18,6 +21,7 @@ header{
     height:100vh ;
     position: relative;
     z-index: 2;
+    padding: 0 16px;
 }
 header > div{
     position: absolute;
@@ -136,9 +140,6 @@ nav{
     min-height: 100vh;
     width: 100%;
 } */
-.main-box{
-
-}
 /* header div{
     position: absolute;
     top: 50%;
@@ -154,13 +155,7 @@ nav{
     flex-direction: column;
     justify-content: center;
 }
-.main-box__about-me{
-}
-.main-box__work{
-}
-.main-box__contact{
-   
-}
+
 h1{
     font-size: 64px;
     font-weight: bold;
@@ -188,8 +183,8 @@ h2{
     font-size: 32px;
     margin-bottom: 24px;
 }
-.main-box__start button{
-    font-size: 32px; 
+.main-box__start a{
+    font-size: 32px;
     padding: 16px 32px;
     color: white;
     font-weight: bold;
@@ -198,11 +193,12 @@ h2{
     margin: 0 auto;
     border: white solid 1px;
     transition: all 0.4s;  
+    display: inline-block;
 }
-.main-box__start button:hover{
+.main-box__start a:hover{
     box-shadow: 0 0 16px white;
 }
-.main-box__start button:active{
+.main-box__start a:active{
     transform: scale(0.95);
     box-shadow: 0 0 4px white;
     transition: all 0.1s;
@@ -262,7 +258,7 @@ h2{
 .about-me__elements{
     display: flex;
     align-items: center;
-    
+    gap: 24px;
 }
 .about-me__elements p{
     color: white;
@@ -298,7 +294,7 @@ form h3{
     color: white;
     font-size: 20px;
     margin-bottom: 16px;
-    
+    line-height: 150%;
 }
 .main-box__contact h2{
     margin-bottom: 32px;
@@ -308,6 +304,7 @@ form h3{
     margin: 0 auto;
     position: relative;
     margin-bottom: 16px;
+    min-width: 256px;
 }
 .input-box input, .input-box textarea{
     width: 100%;
@@ -389,7 +386,8 @@ form .submit-wrapper_active{
     height: 70vh;
     background-color: rgba(0, 0, 0, 0.461);
     border-radius: 10px;
-    width: 60%;
+    width: 100%;
+    max-width: 600px;
 }
 .swiper-slide img{
     height: 40vh;
@@ -427,4 +425,7 @@ form .submit-wrapper_active{
 }
 .swiper-slide a:hover{
     background-color: transparent;
+}
+html{
+    scroll-behavior: smooth;
 }
